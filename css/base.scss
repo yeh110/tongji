@@ -1,0 +1,193 @@
+@import "conifg";
+html,
+body {
+    height: 100%;
+    min-width: 1200px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    position: relative;
+    background-color: #f1f1f1;
+    font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB",Arial,SimSun,sans-serif;
+}
+.form-control{
+    border-radius: 0;
+}
+
+.head-topbar{
+    position: relative;
+    z-index: 100;
+    clear: both;
+    height: 50px;
+    font-size: 12px;
+    min-width: 990px;
+    background-color: $color-g;
+    background-image: -webkit-gradient(linear,left top,right top,from($color-g),to(#00b4aa));
+    background-image: -webkit-linear-gradient(left,$color-g,#00b4aa);
+    background-image: -moz-linear-gradient(left,$color-g,#00b4aa);
+    background-image: linear-gradient(to right,$color-g,#00b4aa);
+    .logo{
+        float: left;
+        padding: 9px 0;
+        width: $menuwitch;
+        text-align: center;
+        background-color: $color-c;
+        img{
+            height: 32px;
+        }
+    }
+    .nav{
+        font-size: 15px;
+        float: left;
+        li{
+            display: block;
+            float: left;
+            text-align: center;
+            line-height: 50px;
+            border-left: 1px solid #0193a7;
+            &:hover{
+                background-color: $color-b;
+            }
+            &.active{
+                background-color: $color-b;
+            }
+            a{
+                color: #fff;
+                padding: 0 25px;
+                display: inline-block;
+                &:hover{
+                    background-color: $color-b;
+                }
+                @include text-decoration;
+
+            }
+        }
+    }
+}
+.main-body{
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    bottom: 0px;
+    z-index: 100;
+}
+.main-sidebar{
+    width: $menuwitch;
+    display: block;
+    position: fixed;
+    top: 50px;
+    bottom: 0px;
+    background-color: #fff;
+    border-right: 1px solid $borcolor;
+    z-index: 102;
+    overflow-x: hidden;
+}
+.menu {
+    display: block;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid $borcolor;
+    &.no_extra {
+        border-top-width: 0;
+    }
+    .menu_title {
+        position: relative;
+        padding: 0 30px 0;
+        width: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
+        line-height: 34px;
+        color: #8d8d8d;
+        font-weight: normal;
+        font-size: 15px;
+        .menu_icon {
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+            display: inline-block;
+            margin-right: 10px;
+            margin-top: -0.2em;
+        }
+    }
+    .menu_item {
+        &:hover{
+            background-color: $borcolor;
+        }
+        &.active a {
+            color: #fff;
+            margin-right: -1px;
+            background-color: #293038;
+        }
+        a{
+            line-height: 34px;
+            display: block;
+            padding: 0 0 0 58px;
+            width: auto;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: normal;
+            color: #222;
+            @include text-decoration;
+
+        }
+
+    }
+}
+
+
+.main-content {
+    width: auto;
+    position: absolute;
+    top: 0px;
+    left: $menuwitch;
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
+    background: #FFF;
+}
+.content-wrap {
+    position: absolute;
+    width: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    overflow-y: auto;
+    @include transition;
+
+}
+.dashboard-wrap{
+    margin: 20px;
+}
+
+
+//主题大标题栏
+.main-title {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $borcolor;
+}
+.main-title .main-title-name {
+    position: relative;
+    float: left;
+    padding: 15px;
+    font-size: 20px; }
+.main-title .main-title-name i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+    width: 4px;
+    height: 20px;
+    background-color: $color-b; }
+.main-title .main-title-plus {
+    float: right;
+    padding: 12px;
+    color: #5bc0de;
+    .glyphicon{
+        width: 14px;
+    }
+}

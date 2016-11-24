@@ -1,0 +1,17 @@
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px; }
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track {
+  background-color: #e2e2e2; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 3px; }
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track {
+  background-color: #e2e2e2; }
+
+/*# sourceMappingURL=conifg.css.map */

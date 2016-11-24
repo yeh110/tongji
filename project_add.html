@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>系统主页</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+<div class="head-topbar">
+    <div class="logo"><a href="#"><img src="img/logo.png" alt="云数管家" ></a></div>
+    <ul class="nav">
+        <li class="active"><a href="#">系统</a></li>
+        <li><a href="#">数据</a></li>
+        <li><a href="#">财务</a></li>
+        <li><a href="#">帮助</a></li>
+    </ul>
+</div>
+<div class="main-body">
+    <div class="main-sidebar">
+
+        <div class="side-menu">
+            <dl class="menu no_extra">
+                <dt class="menu_title"><i class="menu_icon" style="background:url(https://res.wx.qq.com/mpres/htmledition/images/icon/menu/icon_menu_function.png) no-repeat;"></i>功能</dt>
+                <dd class="menu_item active"><a href="#">系统概况</a></dd>
+                <dd class="menu_item"><a href="#">系统管理</a></dd>
+            </dl>
+            <dl class="menu">
+                <dt class="menu_title"><i class="menu_icon" style="background:url(https://res.wx.qq.com/mpres/htmledition/images/icon/menu/icon_menu_setup.png) no-repeat;"></i>功能</dt>
+                <dd class="menu_item"><a href="#">系统管理</a></dd>
+                <dd class="menu_item"><a href="#">系统管理</a></dd>
+            </dl>
+            <dl class="menu">
+                <dt class="menu_title"><i class="menu_icon" style="background:url(https://res.wx.qq.com/mpres/htmledition/images/icon/menu/icon_menu_wxpay_v2.png) no-repeat;"></i>财务管理</dt>
+                <dd class="menu_item"><a href="#">账户充值</a></dd>
+                <dd class="menu_item"><a href="#">充值记录</a></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="content-wrap">
+            <div class="dashboard-wrap">
+                <div class="main-title clearfix">
+                    <span class="main-title-name"><i></i>开通项目</span>
+                    <span class="main-title-plus"><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus
+"></span> 添加项目</button></span>
+                </div>
+                <div class="add_item_main">
+                    <ul class="list-unstyled form-main">
+                        <li class="clearfix">
+                            <span class="frm-name">项目名称：</span>
+                            <div class="frm-con"><input type="text" class="form-control" placeholder="2-10个字" style="width: 200px;"></div>
+                        </li>
+                        <li class="clearfix">
+                            <span class="frm-name">计费方式：</span>
+                            <div class="frm-con">
+                                <div class="select_wrap">
+                                    <a class="active" href="#">按量计费</a><a href="#">按需购买</a><a href="#">包月计费</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <span class="frm-name">绑定域名：</span>
+                            <div class="frm-con">
+                                <div class="domain-wrap">
+                                    <div class="domain-list">
+                                        <div class="domain-item"><input type="text" class="form-control" placeholder="youdomain.com" style="width: 300px;"><a class="domain-del" href="#">删除</a></div>
+                                        <div class="domain-item"><input type="text" class="form-control" placeholder="youdomain.com" style="width: 300px;"><a class="domain-del" href="#">删除</a></div>
+                                        <div class="domain-item"><input type="text" class="form-control" placeholder="youdomain.com" style="width: 300px;"><a class="domain-del" href="#">删除</a></div>
+                                        <div class="domain-item"><input type="text" class="form-control" placeholder="youdomain.com" style="width: 300px;"><a class="domain-del" href="#">删除</a></div>
+                                    </div>
+                                    <div class="domain-item-add"><button type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span>添加域名</button></div>
+                                    <div class="domain-add-info"><p class="text-muted"><small>可由英文字母（不区分大小写）或数字构成，暂不支持中文域名添加的全部域名的源站需完全相同</small></p></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <span class="frm-name"></span>
+                            <div class="frm-con">
+                                <button type="button" class="btn btn-success">确定开通</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+<script>
+</script>
+</body>
+</html>

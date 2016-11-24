@@ -1,0 +1,47 @@
+$color-g : #09C;
+$color-b : #008fbf;
+$color-c : #0087b4;
+
+//菜单栏宽度
+$menuwitch : 200px;
+
+//灰色线条颜色
+$borcolor : #e5e5e5;
+
+@mixin text-decoration{
+    &:focus,
+    &:hover{
+        text-decoration: none;
+    }
+}
+@mixin transition($time:0.2s){
+    -o-transition: all $time ease;
+    -ms-transition: all $time ease;
+    -moz-transition: all $time ease;
+    -webkit-transition: all $time ease;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track {
+    background-color: #e2e2e2;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background-color: #999;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track {
+    background-color: #e2e2e2;
+}
+
+@for $i from 5 through 40 {
+    .w-#{$i} { width: 10px * $i; }
+}

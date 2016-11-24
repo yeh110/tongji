@@ -1,0 +1,240 @@
+.content-wrap {
+    background-color: #eaedf1;
+}
+
+.main-info {
+    margin: 0 -10px;
+    .col-item{
+        float: left;
+        width: 33.333333%;
+        .item-content {
+            background: #fff;
+            height: 158px;
+            padding: 30px 0 0 30px;
+            margin: 0 10px;
+        }
+        .item-title {
+            font-size: 16px;
+            margin-bottom: 20px;
+            padding-right: 24px;
+        }
+    }
+    .social-binding {
+        height: 28px;
+        font-size: 14px;
+        .username {
+            line-height: 28px;
+            color: #8f8f8f;
+            white-space: nowrap;
+            overflow: hidden;
+            vertical-align: sub;
+            max-width: 160px;
+            text-overflow: ellipsis;
+            float: left;
+            display: block;
+        }
+    }
+}
+.seperate-line {
+    color: #c4c4c4;
+    border-right: 1px solid #ccc;
+    height: 12px;
+    margin: 8px 10px;
+    float: left;
+    display: block;
+}
+.main-info-icon{
+    position: relative;
+    width: 28px;
+    height: 28px;
+    padding: 4px 6px;
+    display: inline-block;
+    float: left;
+    margin-right: 2px;
+}
+.main-info-icon:hover{
+    background-color: #eee;
+}
+.main-info-icon i{
+    display: inline-block;
+    height: 20px;
+    width: 16px;
+    background-image: url("../img/user_staus.png");
+    background-repeat: no-repeat;
+}
+.main-info-icon .icon-mobile{
+    background-position: -126px 0;
+}
+.main-info-icon.active .icon-mobile{
+    background-position: -18px 0;
+}
+.main-info-icon .icon-email{
+    background-position: -108px 0;
+}
+.main-info-icon.active .icon-email{
+    background-position: -90px 0;
+}
+.main-info-icon .icon-qq{
+    background-position: -71px 0;
+}
+.main-info-icon.active .icon-qq{
+    background-position: 1px 0;
+}
+
+.bubble {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    visibility: hidden;
+    width: 300px;
+    margin-left: -150px;
+    margin-top: 8px;
+    color: #404A58;
+    opacity: 0;
+    -webkit-transition: .3s ease;
+    transition: .3s ease 1s;
+    -webkit-transition-delay: 0ms;
+    transition-delay: 0ms;
+    text-align: center;
+    /*pointer-events: none;*/
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+.bubble .bubble-bd {
+    font-size: 12px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 6px 10px;
+    border: 1px solid #b3b7bf;
+    border-radius: 2px;
+    background-color: #fff;
+    line-height: 1.6;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.15);
+    position: static!important;
+    left: 50%;
+    top: 50%;
+    display: inline-block;
+}
+
+.main-info-icon:hover .bubble,
+.main-info-icon .bubble:hover{
+    z-index: 9999;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: 100ms;
+    transition-delay: 100ms;
+    opacity: 1;
+}
+
+.bubble .bubble-bd:before,
+.bubble .bubble-bd:after {
+    font-size: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px dashed transparent;
+}
+.bubble .bubble-bd:before,
+.bubble .bubble-bd:after{
+    bottom: 100%;
+    left: inherit;
+    right: inherit;
+    margin-bottom: -1px;
+    border-bottom-style: solid;
+}
+.bubble .bubble-bd:after {
+    border: 7px dashed transparent;
+}
+.bubble .bubble-bd:after {
+    margin-left: -7px;
+    border-bottom-color: #fff;
+}
+.bubble .bubble-bd:before {
+    margin-left: -8px;
+    border-bottom-color: #b3b7bf;
+}
+
+.main-info em{
+    font-style: normal;
+}
+.main-info .integer-number {
+    font-size: 36px;
+    color: #000;
+}
+.main-info .decimal-number {
+    font-size: 16px;
+    color: #000;
+}
+.main-info .recharge {
+    color: #fff;
+    background: #f70;
+    padding: 8px 34px;
+    line-height: 32px;
+    vertical-align: text-bottom;
+    text-align: center;
+    margin-right: 24px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.main-info .recharge:hover {
+    text-decoration: none;
+    background: #f77300;
+}
+.main-info .account-actions {
+    font-size: 14px;
+    margin-top: 4px;
+    display: inline-block;
+    margin-left: -10px;
+}
+.main-info .account-actions a {
+    margin-left: 10px;
+}
+
+/*今日数据*/
+.data-main{
+    margin: 0 -10px;
+}
+.data-main h2,
+.trend-main h2{
+    margin: 30px 0 18px 10px;
+    font-size: 16px;
+    color: #a8a8a8;
+    font-weight: 400;
+}
+.data-main .col-item{
+    float: left;
+    width: 25%;
+    em{
+        font-style: normal;
+    }
+    .item-content {
+        background: #fff;
+        height: 165px;
+        padding: 30px 0 0 30px;
+        margin: 0 10px;
+    }
+    .item-title {
+        font-size: 16px;
+        margin-bottom: 20px;
+        padding-right: 24px;
+    }
+    .data-info{
+        font-size: 26px;
+        font-width: bold;
+    }
+    .data-unit{
+        color: #666;
+        margin-left: 5px;
+    }
+}
+.overview{
+    color: #999;
+    .add{
+        color: #4cae4c;
+    }
+    .cut{
+        color: #ac2925;
+    }
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAiBA,mBAAoB;EAChB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;;AAGf;yBAC0B;EACtB,gBAAgB,EAAE,OAAO;;AAG7B,yBAA0B;EAEtB,gBAAgB,EAAE,IAAI;EACtB,aAAa,EAAE,GAAG;;AAGtB;yBAC0B;EACtB,gBAAgB,EAAE,OAAO",
+"sources": ["conifg.scss"],
+"names": [],
+"file": "conifg.css"
+}

@@ -1,0 +1,160 @@
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px; }
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track {
+  background-color: #e2e2e2; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 3px; }
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track {
+  background-color: #e2e2e2; }
+
+.w-5 {
+  width: 50px; }
+
+.w-6 {
+  width: 60px; }
+
+.w-7 {
+  width: 70px; }
+
+.w-8 {
+  width: 80px; }
+
+.w-9 {
+  width: 90px; }
+
+.w-10 {
+  width: 100px; }
+
+.w-11 {
+  width: 110px; }
+
+.w-12 {
+  width: 120px; }
+
+.w-13 {
+  width: 130px; }
+
+.w-14 {
+  width: 140px; }
+
+.w-15 {
+  width: 150px; }
+
+.w-16 {
+  width: 160px; }
+
+.w-17 {
+  width: 170px; }
+
+.w-18 {
+  width: 180px; }
+
+.w-19 {
+  width: 190px; }
+
+.w-20 {
+  width: 200px; }
+
+.w-21 {
+  width: 210px; }
+
+.w-22 {
+  width: 220px; }
+
+.w-23 {
+  width: 230px; }
+
+.w-24 {
+  width: 240px; }
+
+.w-25 {
+  width: 250px; }
+
+.w-26 {
+  width: 260px; }
+
+.w-27 {
+  width: 270px; }
+
+.w-28 {
+  width: 280px; }
+
+.w-29 {
+  width: 290px; }
+
+.w-30 {
+  width: 300px; }
+
+.w-31 {
+  width: 310px; }
+
+.w-32 {
+  width: 320px; }
+
+.w-33 {
+  width: 330px; }
+
+.w-34 {
+  width: 340px; }
+
+.w-35 {
+  width: 350px; }
+
+.w-36 {
+  width: 360px; }
+
+.w-37 {
+  width: 370px; }
+
+.w-38 {
+  width: 380px; }
+
+.w-39 {
+  width: 390px; }
+
+.w-40 {
+  width: 400px; }
+
+.form-main li {
+  margin-bottom: 20px; }
+  .form-main li .frm-name {
+    width: 110px;
+    line-height: 34px;
+    float: left; }
+  .form-main li .frm-con {
+    margin-left: 110px; }
+
+.select_wrap a {
+  display: inline-block;
+  margin-right: 1px;
+  padding: 7px 25px;
+  background-color: #e5e5e5;
+  color: #666;
+  opacity: .8; }
+  .select_wrap a:focus, .select_wrap a:hover {
+    text-decoration: none; }
+  .select_wrap a:hover {
+    opacity: 1; }
+  .select_wrap a.active {
+    background-color: #09C;
+    color: #fff; }
+
+.domain-wrap .domain-list .domain-item {
+  min-height: 34px;
+  margin-bottom: 15px; }
+  .domain-wrap .domain-list .domain-item input {
+    float: left; }
+  .domain-wrap .domain-list .domain-item .domain-del {
+    line-height: 34px;
+    padding: 10px; }
+.domain-wrap .domain-item-add .glyphicon {
+  width: 12px; }
+
+/*# sourceMappingURL=project.css.map */

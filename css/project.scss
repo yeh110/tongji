@@ -1,0 +1,50 @@
+@import "conifg";
+.form-main li{
+    margin-bottom: 20px;
+    $width : 110px;
+    .frm-name{
+        width: $width;
+        line-height: 34px;
+        float: left;
+    }
+    .frm-con{
+        margin-left: $width;
+    }
+}
+.select_wrap{
+    a{
+        display: inline-block;
+        margin-right: 1px;
+        padding: 7px 25px;
+        background-color: $borcolor;
+        color: #666;
+        opacity: .8;
+        @include text-decoration;
+        &:hover{
+            opacity: 1;
+        }
+        &.active{
+            background-color: $color-g;
+            color: #fff;
+        }
+    }
+}
+
+.domain-wrap{
+    .domain-list{
+        .domain-item{
+            min-height: 34px;
+            margin-bottom: 15px;
+            input{
+                float: left;
+            }
+            .domain-del{
+                line-height: 34px;
+                padding: 10px;
+            }
+        }
+    }
+    .domain-item-add .glyphicon{
+        width: 12px;
+    }
+}
