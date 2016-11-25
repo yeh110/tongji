@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/dateRange.css">
 </head>
 <body>
 <div class="head-topbar">
@@ -51,24 +52,24 @@
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="号码,归属地,网址,标题,关键字">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button">搜索</button>
+                                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span> 搜索</button>
                                 </span>
                             </div><!-- /input-group -->
                         </div>
                         <div class="pull-right">
-                            <a href="#"><span class="caret"></span>多条件筛选</a>
+                            <a href="javascript:;" class="filtrate-sa"><span class="caret"></span>多条件筛选</a>
                         </div>
                     </div>
                     <div class="bd">
-                        <div class="item">
+                        <div class="item" id="filtrate-date">
                             <label>访问时间：</label>
-                            <a href="#">全部</a>
-                            <a href="javascript:;">今天</a>
-                            <a class="active" href="javascript:;">昨天</a>
-                            <a href="javascript:;">本周</a>
-                            <a href="javascript:;">本月</a>
-                            <a href="javascript:;">本年</a>
-                            <a href="javascript:;" id="wrapper">自定义
+                            <a href="javascript:;" data-val="all" class="active" >全部</a>
+                            <a href="javascript:;" data-val="today">今天</a>
+                            <a href="javascript:;" data-val="today">昨天</a>
+                            <a href="javascript:;" data-val="tweek">本周</a>
+                            <a href="javascript:;" data-val="tmonth">本月</a>
+                            <a href="javascript:;" data-val="tyear">本年</a>
+                            <a href="javascript:;" id="date_demo3" data-val="diy">自定义
                             <select class="custom-date" name="select" style="display: none">
                                 <option value="7" selected="selected">7天</option>
                                 <option value="30">30天</option>
@@ -79,30 +80,22 @@
                             </select>
                             </a>
                         </div>
-                        <div class="item">
-                            <label>运营商：</label>
-                            <a href="#">全部</a>
-                            <a class="active" href="javascript:;">中国移动</a>
-                            <a href="javascript:;">中国联通</a>
-                            <a href="javascript:;">中国电信</a>
-                            <a href="javascript:;">虚拟运营商</a>
-                        </div>
-                        <div class="item">
+                        <div class="item" id="filtrate-status">
                             <label>客户状态：</label>
-                            <a class="active" href="#">全部</a>
-                            <a href="javascript:;">待跟进</a>
-                            <a href="javascript:;">未沟通</a>
-                            <a href="javascript:;">无意向</a>
-                            <a href="javascript:;">未回复</a>
-                            <a href="javascript:;">已沟通</a>
-                            <a href="javascript:;">有意向</a>
-                            <a href="javascript:;">已成交</a>
+                            <a href="javascript:;" data-val="all" class="active">全部</a>
+                            <a href="javascript:;" data-val="1">待跟进</a>
+                            <a href="javascript:;" data-val="2">未沟通</a>
+                            <a href="javascript:;" data-val="3">无意向</a>
+                            <a href="javascript:;" data-val="4">未回复</a>
+                            <a href="javascript:;" data-val="5">已沟通</a>
+                            <a href="javascript:;" data-val="6">有意向</a>
+                            <a href="javascript:;" data-val="7">已成交</a>
                         </div>
-                        <div class="item">
+                        <div class="item" id="filtrate-buy">
                             <label>号码状态：</label>
-                            <a class="active" href="#">全部</a>
-                            <a href="javascript:;">未购买</a>
-                            <a href="javascript:;">已购买</a>
+                            <a href="javascript:;" data-val="all" class="active">全部</a>
+                            <a href="javascript:;" data-val="1">未购买</a>
+                            <a href="javascript:;" data-val="2">已购买</a>
                         </div>
                     </div>
                 </div>
@@ -345,7 +338,7 @@
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="js/bootstrap-paginator.min.js"></script>
-<script src="js/datouwang.js"></script>
+<script src="js/dateRange.js"></script>
 <script>
     $(function(){
         createPage(10, 8, 1500);
@@ -359,9 +352,50 @@
                 }
             });
         }
+        $(".filtrate-sa").click(function(){
+            $(".filtrate").toggleClass("fold");
+        });
+        var FD = {
+            d : 'all',
+            s : 'all',
+            b : 'all',
+            y : '0',
+            p : 1
+        }
+        var dateRange = new pickerDateRange('date_demo3', {
+            autoSubmit : true,
+            isTodayValid : true,
+            //isTodayValid : false,
+            startDate : '自定义日期',
+            endDate : '',
+            theme : 'ta',
+            defaultText : ' 到 ',
+            success : function(obj) {
+                FD.y = obj.startDate+'_'+obj.endDate;
+                console.log(FD);
+            }
+        });
+        $("#filtrate-date a").click(function(){
+            $("#filtrate-date a").removeClass('active');
+            $(this).addClass('active');
+            FD.d = $(this).attr('data-val');
+            if(FD.d!='diy'){
+                console.log(FD);
+            }
+        })
+        $("#filtrate-status a").click(function(){
+            $("#filtrate-status a").removeClass('active');
+            $(this).addClass('active');
+            FD.s = $(this).attr('data-val');
+            console.log(FD);
+        })
+        $("#filtrate-buy a").click(function(){
+            $("#filtrate-buy a").removeClass('active');
+            $(this).addClass('active');
+            FD.b = $(this).attr('data-val');
+            console.log(FD);
+        })
     });
-</script>
-<script>
 </script>
 </body>
 </html>
