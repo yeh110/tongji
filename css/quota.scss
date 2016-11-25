@@ -1,0 +1,19 @@
+.table-wrap{
+    .table{
+        .progress{
+            margin-top: 2px;
+            margin-bottom: 0;
+            width: 80%;
+            height: 10px;
+
+        }
+        tbody{
+            td{
+                .text-muted{
+                    font-size: 12px;
+                }
+                vertical-align: middle;
+            }
+        }
+    }
+}

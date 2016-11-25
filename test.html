@@ -1,0 +1,23 @@
+$(function () {
+$("#userinfo-mobile").popover({
+template: '<div class="popover" role="tooltip"><div class="arrow"></div><div class="popover-content"></div></div>',
+html: true,
+trigger: "hover",
+placement: "bottom",
+delay: {hide: 100}
+}).on('shown.bs.popover', function (event) {
+var that = this;
+$(this).parent().find('div.popover').on('mouseenter', function () {
+$(that).attr('in', true);
+}).on('mouseleave', function () {
+$(that).removeAttr('in');
+$(that).popover('hide');
+});
+}).on('hide.bs.popover', function (event) {
+if ($(this).attr('in')) {
+event.preventDefault();
+}
+});
+})
+
+<span class="main-info-icon active" id="userinfo-mobile"  data-container="body" data-toggle="popover" data-placement="bottom" data-content="您绑定的号码为：136****2642，<a href='#'>更换</a>"><a href="#"><i class="icon-mobile"></i></a></span>

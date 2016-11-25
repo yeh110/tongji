@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>系统主页</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/quota.css">
+</head>
+<body>
+<div class="head-topbar">
+    <div class="logo"><a href="#"><img src="img/logo.png" alt="云数管家" ></a></div>
+    <ul class="nav">
+        <li class="active"><a href="#">系统</a></li>
+        <li><a href="#">数据</a></li>
+        <li><a href="#">财务</a></li>
+        <li><a href="#">帮助</a></li>
+    </ul>
+</div>
+<div class="main-body">
+    <div class="main-sidebar">
+
+        <div class="side-menu">
+            <dl class="menu no_extra">
+                <dt class="menu_title"><i class="menu_icon" style="background:url(https://res.wx.qq.com/mpres/htmledition/images/icon/menu/icon_menu_function.png) no-repeat;"></i>功能</dt>
+                <dd class="menu_item active"><a href="#">系统概况</a></dd>
+                <dd class="menu_item"><a href="#">系统管理</a></dd>
+            </dl>
+            <dl class="menu">
+                <dt class="menu_title"><i class="menu_icon" style="background:url(https://res.wx.qq.com/mpres/htmledition/images/icon/menu/icon_menu_setup.png) no-repeat;"></i>功能</dt>
+                <dd class="menu_item"><a href="#">系统管理</a></dd>
+                <dd class="menu_item"><a href="#">系统管理</a></dd>
+            </dl>
+            <dl class="menu">
+                <dt class="menu_title"><i class="menu_icon" style="background:url(https://res.wx.qq.com/mpres/htmledition/images/icon/menu/icon_menu_wxpay_v2.png) no-repeat;"></i>财务管理</dt>
+                <dd class="menu_item"><a href="#">账户充值</a></dd>
+                <dd class="menu_item"><a href="#">充值记录</a></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="content-wrap">
+            <div class="dashboard-wrap">
+                <div class="main-title clearfix">
+                    <span class="main-title-name"><i></i>配额包管理</span>
+                    <span class="main-title-plus"><button type="button" class="btn btn-info"><span class="glyphicon glyphicon-shopping-cart"></span> 购买配额包</button></span>
+                </div>
+                <div class="table-wrap">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr class="active">
+                                <th>类型</th>
+                                <th>使用情况</th>
+                                <th>购买/赠送时间</th>
+                                <th>到期时间</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>赠送配额</td>
+                                <td>
+                                    <div class="text-muted">
+                                        已使用：<span class="text-primary">4.00GB</span>(共: 10.00GB)
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>2016-11-25</td>
+                                <td>2016-11-25</td>
+                            </tr>
+                            <tr>
+                                <td>赠送配额</td>
+                                <td>
+                                    <div class="text-muted">
+                                        已使用：<span class="text-danger">9.00GB</span>(共: 10.00GB)
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>2016-11-25</td>
+                                <td>2016-11-25</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+<script>
+</script>
+</body>
+</html>

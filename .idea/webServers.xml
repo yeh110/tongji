@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4233a7b2-117f-4fb3-8a09-7f4ff174f6f7" name="s8.ymsun.com" url="http://s8.ymsun.com">
+        <fileTransfer host="s8.ymsun.com" port="21" rootFolder="/public_html/tongji/">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

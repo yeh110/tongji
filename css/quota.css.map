@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEQ,4BAAS;EACL,UAAU,EAAE,GAAG;EACf,aAAa,EAAE,CAAC;EAChB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;AAIZ,2BAAE;EAIE,cAAc,EAAE,MAAM;EAHtB,uCAAW;IACP,SAAS,EAAE,IAAI",
+"sources": ["quota.scss"],
+"names": [],
+"file": "quota.css"
+}

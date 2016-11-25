@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据管理</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+<div class="head-topbar">
+    <div class="logo"><a href="#"><img src="img/logo.png" alt="云数管家" ></a></div>
+    <ul class="nav">
+        <li class="active"><a href="#">系统</a></li>
+        <li><a href="#">数据</a></li>
+        <li><a href="#">财务</a></li>
+        <li><a href="#">帮助</a></li>
+    </ul>
+</div>
+<div class="main-body">
+    <div class="main-sidebar">
+
+        <div class="side-menu">
+            <dl class="menu no_extra">
+                <dt class="menu_title"><i class="menu_icon" style="background:url(https://res.wx.qq.com/mpres/htmledition/images/icon/menu/icon_menu_function.png) no-repeat;"></i>功能</dt>
+                <dd class="menu_item active"><a href="#">系统概况</a></dd>
+                <dd class="menu_item"><a href="#">系统管理</a></dd>
+            </dl>
+            <dl class="menu">
+                <dt class="menu_title"><i class="menu_icon" style="background:url(https://res.wx.qq.com/mpres/htmledition/images/icon/menu/icon_menu_setup.png) no-repeat;"></i>功能</dt>
+                <dd class="menu_item"><a href="#">系统管理</a></dd>
+                <dd class="menu_item"><a href="#">系统管理</a></dd>
+            </dl>
+            <dl class="menu">
+                <dt class="menu_title"><i class="menu_icon" style="background:url(https://res.wx.qq.com/mpres/htmledition/images/icon/menu/icon_menu_wxpay_v2.png) no-repeat;"></i>财务管理</dt>
+                <dd class="menu_item"><a href="#">账户充值</a></dd>
+                <dd class="menu_item"><a href="#">充值记录</a></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="content-wrap">
+            <div class="dashboard-wrap">
+                <div class="main-title clearfix">
+                    <span class="main-title-name"><i></i>数据管理 <small class="text-info">（默认项目）</small></span>
+                    <span class="main-title-plus"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon glyphicon-chevron-left text-muted"></span> 返回项目</button></span>
+                </div>
+                <div class="filtrate"><!--fold折叠-->
+                    <div class="hd clearfix">
+                        <div class="pull-left">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="号码,归属地,网址,标题,关键字">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">搜索</button>
+                                </span>
+                            </div><!-- /input-group -->
+                        </div>
+                        <div class="pull-right">
+                            <a href="#"><span class="caret"></span>多条件筛选</a>
+                        </div>
+                    </div>
+                    <div class="bd">
+                        <div class="item">
+                            <label>访问时间：</label>
+                            <a href="#">全部</a>
+                            <a href="javascript:;">今天</a>
+                            <a class="active" href="javascript:;">昨天</a>
+                            <a href="javascript:;">本周</a>
+                            <a href="javascript:;">本月</a>
+                            <a href="javascript:;">本年</a>
+                            <a href="javascript:;" id="wrapper">自定义
+                            <select class="custom-date" name="select" style="display: none">
+                                <option value="7" selected="selected">7天</option>
+                                <option value="30">30天</option>
+                                <option value="90">90天</option>
+                                <option value="180">180天</option>
+                                <option value="365">365天</option>
+                                <option value='custom'>自定义</option>
+                            </select>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <label>运营商：</label>
+                            <a href="#">全部</a>
+                            <a class="active" href="javascript:;">中国移动</a>
+                            <a href="javascript:;">中国联通</a>
+                            <a href="javascript:;">中国电信</a>
+                            <a href="javascript:;">虚拟运营商</a>
+                        </div>
+                        <div class="item">
+                            <label>客户状态：</label>
+                            <a class="active" href="#">全部</a>
+                            <a href="javascript:;">待跟进</a>
+                            <a href="javascript:;">未沟通</a>
+                            <a href="javascript:;">无意向</a>
+                            <a href="javascript:;">未回复</a>
+                            <a href="javascript:;">已沟通</a>
+                            <a href="javascript:;">有意向</a>
+                            <a href="javascript:;">已成交</a>
+                        </div>
+                        <div class="item">
+                            <label>号码状态：</label>
+                            <a class="active" href="#">全部</a>
+                            <a href="javascript:;">未购买</a>
+                            <a href="javascript:;">已购买</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-wrap">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr class="active">
+                                <th><input type="checkbox"></th>
+                                <th>号码</th>
+                                <th>标记</th>
+                                <th>标题/受访页面</th>
+                                <th>关键词/搜索引擎</th>
+                                <th>IP/地区</th>
+                                <th>初次访问时间/次数</th>
+                                <th>设备型号/浏览器</th>
+                                <th class="text-right">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>13651182642</td>
+                                <td>未标记</td>
+                                <td>
+                                    <p class="table-p"><a href="http://www.jianshu.com/p/6f2ee05f1949">你以为的巧合，不过是另一个人用心的结果</a></p>
+                                    <p class="table-p">http://www.jianshu.com/p/6f2ee05f1949</p>
+                                </td>
+                                <td>
+                                    <p class="table-p"><a href="http://www.jianshu.com/p/6f2ee05f1949">你以为的巧合</a></p>
+                                    <p class="table-p">百度搜索</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">211.38.149.88</p>
+                                    <p class="table-p">北京市 丰台区 中国移动</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">2016-12-25 11:21:35</p>
+                                    <p class="table-p">浏览<strong class="text-info">8</strong>次</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">iPhone 10.2.1</p>
+                                    <p class="table-p">ios</p>
+                                </td>
+                                <td class="text-right">
+                                    <a href="#">备注</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>13651182642</td>
+                                <td>未标记</td>
+                                <td>
+                                    <p class="table-p"><a href="http://www.jianshu.com/p/6f2ee05f1949">你以为的巧合，不过是另一个人用心的结果</a></p>
+                                    <p class="table-p">http://www.jianshu.com/p/6f2ee05f1949</p>
+                                </td>
+                                <td>
+                                    <p class="table-p"><a href="http://www.jianshu.com/p/6f2ee05f1949">你以为的巧合</a></p>
+                                    <p class="table-p">百度搜索</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">211.38.149.88</p>
+                                    <p class="table-p">北京市 丰台区 中国移动</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">2016-12-25 11:21:35</p>
+                                    <p class="table-p">浏览<strong class="text-info">8</strong>次</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">iPhone 10.2.1</p>
+                                    <p class="table-p">ios</p>
+                                </td>
+                                <td class="text-right">
+                                    <a href="#">备注</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>13651182642</td>
+                                <td>未标记</td>
+                                <td>
+                                    <p class="table-p"><a href="http://www.jianshu.com/p/6f2ee05f1949">你以为的巧合，不过是另一个人用心的结果</a></p>
+                                    <p class="table-p">http://www.jianshu.com/p/6f2ee05f1949</p>
+                                </td>
+                                <td>
+                                    <p class="table-p"><a href="http://www.jianshu.com/p/6f2ee05f1949">你以为的巧合</a></p>
+                                    <p class="table-p">百度搜索</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">211.38.149.88</p>
+                                    <p class="table-p">北京市 丰台区 中国移动</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">2016-12-25 11:21:35</p>
+                                    <p class="table-p">浏览<strong class="text-info">8</strong>次</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">iPhone 10.2.1</p>
+                                    <p class="table-p">ios</p>
+                                </td>
+                                <td class="text-right">
+                                    <a href="#">备注</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>13651182642</td>
+                                <td>未标记</td>
+                                <td>
+                                    <p class="table-p"><a href="http://www.jianshu.com/p/6f2ee05f1949">你以为的巧合，不过是另一个人用心的结果</a></p>
+                                    <p class="table-p">http://www.jianshu.com/p/6f2ee05f1949</p>
+                                </td>
+                                <td>
+                                    <p class="table-p"><a href="http://www.jianshu.com/p/6f2ee05f1949">你以为的巧合</a></p>
+                                    <p class="table-p">百度搜索</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">211.38.149.88</p>
+                                    <p class="table-p">北京市 丰台区 中国移动</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">2016-12-25 11:21:35</p>
+                                    <p class="table-p">浏览<strong class="text-info">8</strong>次</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">iPhone 10.2.1</p>
+                                    <p class="table-p">ios</p>
+                                </td>
+                                <td class="text-right">
+                                    <a href="#">备注</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>13651182642</td>
+                                <td>未标记</td>
+                                <td>
+                                    <p class="table-p"><a href="http://www.jianshu.com/p/6f2ee05f1949">你以为的巧合，不过是另一个人用心的结果</a></p>
+                                    <p class="table-p">http://www.jianshu.com/p/6f2ee05f1949</p>
+                                </td>
+                                <td>
+                                    <p class="table-p"><a href="http://www.jianshu.com/p/6f2ee05f1949">你以为的巧合</a></p>
+                                    <p class="table-p">百度搜索</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">211.38.149.88</p>
+                                    <p class="table-p">北京市 丰台区 中国移动</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">2016-12-25 11:21:35</p>
+                                    <p class="table-p">浏览<strong class="text-info">8</strong>次</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">iPhone 10.2.1</p>
+                                    <p class="table-p">ios</p>
+                                </td>
+                                <td class="text-right">
+                                    <a href="#">备注</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>13651182642</td>
+                                <td>未标记</td>
+                                <td>
+                                    <p class="table-p"><a href="http://www.jianshu.com/p/6f2ee05f1949">你以为的巧合，不过是另一个人用心的结果</a></p>
+                                    <p class="table-p">http://www.jianshu.com/p/6f2ee05f1949</p>
+                                </td>
+                                <td>
+                                    <p class="table-p"><a href="http://www.jianshu.com/p/6f2ee05f1949">你以为的巧合</a></p>
+                                    <p class="table-p">百度搜索</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">211.38.149.88</p>
+                                    <p class="table-p">北京市 丰台区 中国移动</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">2016-12-25 11:21:35</p>
+                                    <p class="table-p">浏览<strong class="text-info">8</strong>次</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">iPhone 10.2.1</p>
+                                    <p class="table-p">ios</p>
+                                </td>
+                                <td class="text-right">
+                                    <a href="#">备注</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>13651182642</td>
+                                <td>未标记</td>
+                                <td>
+                                    <p class="table-p"><a href="http://www.jianshu.com/p/6f2ee05f1949">你以为的巧合，不过是另一个人用心的结果</a></p>
+                                    <p class="table-p">http://www.jianshu.com/p/6f2ee05f1949</p>
+                                </td>
+                                <td>
+                                    <p class="table-p"><a href="http://www.jianshu.com/p/6f2ee05f1949">你以为的巧合</a></p>
+                                    <p class="table-p">百度搜索</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">211.38.149.88</p>
+                                    <p class="table-p">北京市 丰台区 中国移动</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">2016-12-25 11:21:35</p>
+                                    <p class="table-p">浏览<strong class="text-info">8</strong>次</p>
+                                </td>
+                                <td>
+                                    <p class="table-p">iPhone 10.2.1</p>
+                                    <p class="table-p">ios</p>
+                                </td>
+                                <td class="text-right">
+                                    <a href="#">备注</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="table-foot clearfix">
+                        <div class="tools pull-left">
+                            <button type="button" class="btn btn-info">购买所选</button>
+                            <button type="button" class="btn btn-info">导出筛选</button>
+                        </div>
+                        <ul class="pagination pull-right">
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="js/bootstrap-paginator.min.js"></script>
+<script src="js/datouwang.js"></script>
+<script>
+    $(function(){
+        createPage(10, 8, 1500);
+        function createPage(pageSize, buttons, total) {
+            $(".pagination").jBootstrapPage({
+                pageSize : pageSize,
+                total : total,
+                maxPageButton:buttons,
+                onPageClicked: function(obj, pageIndex) {
+                    console.log(pageIndex+1);
+                }
+            });
+        }
+    });
+</script>
+<script>
+</script>
+</body>
+</html>
