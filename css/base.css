@@ -14,112 +14,112 @@
 ::-webkit-scrollbar-track {
   background-color: #e2e2e2; }
 
-.w-5 {
+.w-50 {
   width: 50px; }
 
-.w-6 {
+.w-60 {
   width: 60px; }
 
-.w-7 {
+.w-70 {
   width: 70px; }
 
-.w-8 {
+.w-80 {
   width: 80px; }
 
-.w-9 {
+.w-90 {
   width: 90px; }
 
-.w-10 {
+.w-100 {
   width: 100px; }
 
-.w-11 {
+.w-110 {
   width: 110px; }
 
-.w-12 {
+.w-120 {
   width: 120px; }
 
-.w-13 {
+.w-130 {
   width: 130px; }
 
-.w-14 {
+.w-140 {
   width: 140px; }
 
-.w-15 {
+.w-150 {
   width: 150px; }
 
-.w-16 {
+.w-160 {
   width: 160px; }
 
-.w-17 {
+.w-170 {
   width: 170px; }
 
-.w-18 {
+.w-180 {
   width: 180px; }
 
-.w-19 {
+.w-190 {
   width: 190px; }
 
-.w-20 {
+.w-200 {
   width: 200px; }
 
-.w-21 {
+.w-210 {
   width: 210px; }
 
-.w-22 {
+.w-220 {
   width: 220px; }
 
-.w-23 {
+.w-230 {
   width: 230px; }
 
-.w-24 {
+.w-240 {
   width: 240px; }
 
-.w-25 {
+.w-250 {
   width: 250px; }
 
-.w-26 {
+.w-260 {
   width: 260px; }
 
-.w-27 {
+.w-270 {
   width: 270px; }
 
-.w-28 {
+.w-280 {
   width: 280px; }
 
-.w-29 {
+.w-290 {
   width: 290px; }
 
-.w-30 {
+.w-300 {
   width: 300px; }
 
-.w-31 {
+.w-310 {
   width: 310px; }
 
-.w-32 {
+.w-320 {
   width: 320px; }
 
-.w-33 {
+.w-330 {
   width: 330px; }
 
-.w-34 {
+.w-340 {
   width: 340px; }
 
-.w-35 {
+.w-350 {
   width: 350px; }
 
-.w-36 {
+.w-360 {
   width: 360px; }
 
-.w-37 {
+.w-370 {
   width: 370px; }
 
-.w-38 {
+.w-380 {
   width: 380px; }
 
-.w-39 {
+.w-390 {
   width: 390px; }
 
-.w-40 {
+.w-400 {
   width: 400px; }
 
 html,
@@ -132,6 +132,10 @@ body {
   background-color: #f1f1f1;
   font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB",Arial,SimSun,sans-serif; }
 
+:focus {
+  outline: none !important; }
+
+.btn,
 .form-control {
   border-radius: 0; }
 
@@ -293,5 +297,22 @@ body {
   color: #5bc0de; }
   .main-title .main-title-plus .glyphicon {
     width: 14px; }
+
+.table-wrap {
+  border: 1px solid #e5e5e5; }
+  .table-wrap .table {
+    margin-bottom: 0; }
+    .table-wrap .table tr th {
+      background-color: #ccc;
+      font-weight: normal !important;
+      color: #888; }
+    .table-wrap .table tr td {
+      font-size: 14px; }
+  .table-wrap .table-foot {
+    border-top: 1px solid #e5e5e5;
+    padding: 12px 10px; }
+    .table-wrap .table-foot .pagination {
+      margin: 0;
+      vertical-align: bottom; }
 
 /*# sourceMappingURL=base.css.map */

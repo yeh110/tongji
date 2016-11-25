@@ -52,12 +52,7 @@
                             <div class="social-binding">
                                 <span class="username">yeh110@qq.com</span>
                                 <i class="seperate-line"></i>
-                                <span class="main-info-icon active"><a href="#"><i class="icon-mobile"></i></a>
-                        <div class="bubble">
-                            <div class="bubble-bd">您绑定的手机号为：13651182642，<a href="#">修改</a>
-                            </div>
-                        </div>
-                    </span>
+                                <span class="main-info-icon active" id="userinfo-mobile"  data-container="body" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="您绑定的号码为：136****2642，<a href='#'>更换</a>"><a href="#"><i class="icon-mobile"></i></a></span>
                                 <span class="main-info-icon active"><a href="#"><i class="icon-email"></i></a></span>
                                 <span class="main-info-icon active"><a href="#"><i class="icon-qq"></i></a></span>
                             </div>
@@ -173,6 +168,11 @@
             }]
         });
     });
+    $(function () {
+        $("#userinfo-mobile").popover({
+            html: true,
+        })
+    })
 </script>
 </body>
 </html>

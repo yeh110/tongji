@@ -43,7 +43,7 @@
             <div class="dashboard-wrap">
                 <div class="main-title clearfix">
                     <span class="main-title-name"><i></i>开通项目</span>
-                    <span class="main-title-plus"><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus
+                    <span class="main-title-plus"><button type="button" class="btn btn-info"><span class="glyphicon glyphicon-plus
 "></span> 添加项目</button></span>
                 </div>
                 <div class="add_item_main">
@@ -56,7 +56,22 @@
                             <span class="frm-name">计费方式：</span>
                             <div class="frm-con">
                                 <div class="select_wrap">
-                                    <a class="active" href="#">按量计费</a><a href="#">按需购买</a><a href="#">包月计费</a>
+                                    <div class="btn-group" data-toggle="buttons">
+                                        <label class="btn btn-info active">
+                                            <input type="radio" name="options" id="option1" autocomplete="off" checked>按量计费
+                                        </label>
+                                        <label class="btn btn-info">
+                                            <input type="radio" name="options" id="option2" autocomplete="off">包月计费
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <span class="frm-name">套餐选择：</span>
+                            <div class="frm-con">
+                                <div class="select_wrap">
+                                    <a href="#">选择包月套餐</a>
                                 </div>
                             </div>
                         </li>
@@ -70,7 +85,7 @@
                                         <div class="domain-item"><input type="text" class="form-control" placeholder="youdomain.com" style="width: 300px;"><a class="domain-del" href="#">删除</a></div>
                                         <div class="domain-item"><input type="text" class="form-control" placeholder="youdomain.com" style="width: 300px;"><a class="domain-del" href="#">删除</a></div>
                                     </div>
-                                    <div class="domain-item-add"><button type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span>添加域名</button></div>
+                                    <div class="domain-item-add"><button type="button" class="btn btn-btn-info btn-sm"><span class="glyphicon glyphicon-plus"></span>添加域名</button></div>
                                     <div class="domain-add-info"><p class="text-muted"><small>可由英文字母（不区分大小写）或数字构成，暂不支持中文域名添加的全部域名的源站需完全相同</small></p></div>
                                 </div>
                             </div>
@@ -78,7 +93,7 @@
                         <li class="clearfix">
                             <span class="frm-name"></span>
                             <div class="frm-con">
-                                <button type="button" class="btn btn-success">确定开通</button>
+                                <button type="button" class="btn btn-info">确定开通</button>
                             </div>
                         </li>
                     </ul>

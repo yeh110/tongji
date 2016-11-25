@@ -4,6 +4,9 @@
     $width : 110px;
     .frm-name{
         width: $width;
+        padding-right: 15px;
+        color: #666;
+        text-align: right;
         line-height: 34px;
         float: left;
     }

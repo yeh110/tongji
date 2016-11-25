@@ -43,5 +43,5 @@ $borcolor : #e5e5e5;
 }
 
 @for $i from 5 through 40 {
-    .w-#{$i} { width: 10px * $i; }
+    .w-#{$i*10} { width: 10px * $i; }
 }

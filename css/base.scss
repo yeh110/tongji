@@ -9,6 +9,8 @@ body {
     background-color: #f1f1f1;
     font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB",Arial,SimSun,sans-serif;
 }
+:focus{outline:none!important;}
+.btn,
 .form-control{
     border-radius: 0;
 }
@@ -189,5 +191,30 @@ body {
     color: #5bc0de;
     .glyphicon{
         width: 14px;
+    }
+}
+
+.table-wrap{
+    border: 1px solid $borcolor;
+    .table{
+        margin-bottom: 0;
+        tr{
+            th{
+                background-color: #ccc;
+                font-weight: normal!important;
+                color: #888;
+            }
+            td{
+                font-size: 14px;
+            }
+        }
+    }
+    .table-foot{
+        border-top: 1px solid $borcolor;
+        padding: 12px 10px;
+        .pagination{
+            margin: 0;
+            vertical-align: bottom;
+        }
     }
 }
